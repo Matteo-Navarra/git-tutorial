@@ -6,14 +6,31 @@
 
 body {
   height: 1200px;
-  font-size: 18px;
-  font-family: sans-serif;
-  color: #5D6063;
+  font-size: 20px;
+  font-family: 'Redressed', cursive;
+  color: #fff;
+}
+.container-menu {
+  background: #333;
+}
+#sottotitolo  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.immagine-menu {
+  z-index: 3;
+  background: #orange;
+  height: 20px;
+  width: 20px;
+  display: flex;
 }
 
 a:link,
 a:visited {
-  color: #5D6063;
+  color: #fff;
   text-decoration: none;
 }
 a:hover {
@@ -21,13 +38,18 @@ a:hover {
 }
 
 .header {
-  position: fixed;
+
   display: flex;
   justify-content: space-between;
-
   width: 100%;
-  padding: 50px;
-  background: #D6E9FE;
+  height: 10%;
+  align-items: center;
+  text-align: center;
+  padding:50px;
+  background: #333;
+}
+.header h1 {
+  text-transform: uppercase;
 }
 .menu{
   margin-top: 15px;
@@ -44,9 +66,9 @@ a:hover {
 .dropdown:hover .features-menu {
   display: flex;
   flex-direction: column;
-  background: #B2D6FF;
+  background: #555;
   border-radius: 5px;
-  padding-top: 60px;
+  padding-top: 40px;
   position: absolute;
   top: -25px;
   left: -30px;
@@ -76,4 +98,32 @@ a:hover {
   z-index: 2;
   position: relative;  /* This is important! */
   cursor: pointer;
+}
+#showcase {
+    background: url("../img/img6.jpg") no-repeat center center/cover;
+
+
+}
+
+.logo img {
+
+  width: 500px;
+  border-radius: 50px;
+  display: flex;
+  position: relative;
+  top: 550px;
+
+
+
+
+}
+.container-text {
+  color: black;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+
 }
